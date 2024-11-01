@@ -8,7 +8,7 @@ function speak(text) {
     text_speak.rate = 1;
     text_speak.pitch = 1;
     text_speak.volume = volumeLevel;
-    text_speak.lang = "en-GB";
+    text_speak.lang = "en-IN";
     
     window.speechSynthesis.speak(text_speak);
 }
