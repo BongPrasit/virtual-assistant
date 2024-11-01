@@ -29,8 +29,18 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    wishMe();
+    // You could set up an optional start button for user interaction.
+    let startBtn = document.createElement("button");
+    startBtn.id = "startButton";
+    startBtn.innerText = "Start Nexus";
+    document.body.appendChild(startBtn);
+
+    startBtn.addEventListener("click", () => {
+        wishMe();  // Trigger greeting message on user click
+        startBtn.style.display = "none";  // Hide start button after clicking
+    });
 });
+
 
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let recognition = new speechRecognition();
