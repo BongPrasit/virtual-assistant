@@ -54,3 +54,49 @@ cursor: pointer;
     box-shadow: 2px 2px 20px rgb(21, 145, 207),2px 2px 20px rgb(201, 41, 116);
     letter-spacing: 2px;
 }
+/* For devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px; /* Smaller font size for h1 */
+    }
+
+    #name, #va {
+        font-size: 35px; /* Adjusted font sizes for name and VA */
+    }
+
+    #logo {
+        width: 40vw; /* Increased logo size on smaller screens */
+    }
+
+    #btn {
+        width: 80%; /* Make button wider on smaller screens */
+        font-size: 18px; /* Slightly smaller font size for buttons */
+    }
+}
+
+/* For devices with a max width of 480px (mobile devices) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Even smaller font size for h1 */
+    }
+
+    #name, #va {
+        font-size: 30px; /* Smaller font sizes for mobile */
+    }
+
+    #btn {
+        width: 90%; /* Full width button on mobile */
+        font-size: 16px; /* Even smaller font size for buttons */
+    }
+}
+#btn:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 20px rgb(21, 145, 207), 2px 2px 20px rgb(201, 41, 116);
+    letter-spacing: 2px;
+}
+
