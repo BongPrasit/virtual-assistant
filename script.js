@@ -35,12 +35,14 @@ window.addEventListener('load', () => {
     startBtn.innerText = "Start Nexus";
     document.body.appendChild(startBtn);
 
+    // Automatically greet the user on page load
+    wishMe(); // Call the wishMe function when the page loads
+
     startBtn.addEventListener("click", () => {
         wishMe();  // Trigger greeting message on user click
         startBtn.style.display = "none";  // Hide start button after clicking
     });
 });
-
 
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let recognition = new speechRecognition();
